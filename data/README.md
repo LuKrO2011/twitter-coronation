@@ -1,1 +1,2 @@
-Restirctions for datas
+# Data
+Twitter states in their [Developer Agreement and Policy](https://developer.twitter.com/en/developer-terms/agreement-and-policy) that one is not allowed to publish the data without permission. Therefore, the used data is not available in this repository. 
