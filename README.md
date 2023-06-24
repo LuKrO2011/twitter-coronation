@@ -7,13 +7,25 @@ If not stated otherwise, the code of this repository is written by Lukas Kroding
 ## Data
 Twitter states in their [Developer Agreement and Policy](https://developer.twitter.com/en/developer-terms/agreement-and-policy) that one is not allowed to publish the data without permission. Therefore, the used data is not available in this repository.
 
-## Usage
+## Requirements
+In order to use the code of this repository you need the following things:
+- Twitter bearerToken
+- Anaconda environment 'twitter-coronation'
+
+### Twitter bearerToken
 You need a Twitter bearerToken in order to interact with the Twitter API.
-You can create such a token by creating an app for a [access plan](https://developer.twitter.com/en) of your choice.
-The token has to be saved in a TwitterClient.py file (see demoTwitterClient.py).
+You can create such a token by creating an app for an [access plan](https://developer.twitter.com/en) of your choice.
+The token has to be saved in a file named 'TwitterClient.py'. Therefore, you can create a copy of demoTwitterClient.py, rename it and insert your token there.
 
-Once the token is saved all notebooks can be used in an arbitrary order. 
+### Anaconda environment 'twitter-coronation'
+In order to run the notebooks you need several packages. The easiest way to set everything up is as follows:
+1. Download and install [Anaconda](https://www.anaconda.com/download)
+2. Run 'conda env create -f environment.yml' to create a anaconda environment with all dependencies
+3. Run 'conda activate twitter-coronation' to activate the environment
+4. Run 'jupyter notebook' to start a jupyter server
 
+## Usage
+All notebooks can be run in arbitrary order.
 The following usage examples require [recent search](https://developer.twitter.com/en/docs/twitter-api/tweets/search/api-reference/get-tweets-search-recent). Make sure that your plan supports this API endpoint and that you have enough contingent available.
 
 ### Analyse Tweets
